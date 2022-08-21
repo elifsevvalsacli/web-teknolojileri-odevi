@@ -1,0 +1,22 @@
+.navbar 
+{
+	opacity: 0.8;
+	border-bottom: 1px solid rgb(158, 153, 153);
+    background-color: black;
+}
+
+.fa-ellipsis-v
+{
+	color: #fff;
+}
+
+.container.a
+{
+	color: #fff;
+}
+
+main
+{
+	font-family: 'Open Sans', sans-serif;
+}
+

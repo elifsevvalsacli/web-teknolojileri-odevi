@@ -1,0 +1,133 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+	
+	<meta charset="utf-8">
+
+	<!-- Responsive -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+
+	<!-- Font -->
+	<link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans&display=swap" rel="stylesheet">
+	
+	<!-- Css -->
+	<link rel="stylesheet" href="style.css">
+
+	<!--------------------------------->
+	<title>Web Teknoloji Projesi</title>
+<style>body{
+    background-image: url("images/stars2.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}</style>
+	
+</head>
+
+
+
+
+	<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+
+		<div class="container">
+		
+			<a href="mirasimiz.html" class="navbar-brand text-black">
+	  		  <i class="fas fa-grin-wink"></i>
+	  		   
+	      	</a>
+
+			<div id="navbarCollapse" class="collapse navbar-collapse">
+				<ul class="nav justify-content-center ">
+
+					<li class="nav-item">
+						<a href="anasayfa.html" class="nav-link active  text-white">
+	      				Anasayfa
+	      				</a></li>
+
+					<li class="nav-item">
+						<a href="benimhakkimda.html" class="nav-link active  text-white">
+	      				Benim Hakkımda
+	      				</a></li>
+
+					<li class="nav-item">
+						<a href="ozgecmis.html" class="nav-link active  text-white">
+	      				Özgeçmiş
+	      				</a></li>
+
+	      			<li class="nav-item">
+						<a href="sehrim.html" class="nav-link active  text-white">
+	      				Şehrim
+	      				</a></li>	
+
+					<li class="nav-item">
+						<a href="mirasimiz.html" class="nav-link active  text-white">
+	      				Mirasımız
+	      				</a></li>
+                          
+
+	      			<li class="nav-item">
+						<a href="iletisim.html" class="nav-link active  text-white">
+	      				İletişim
+	      				</a></li>
+                          <li class="nav-item">
+                            <a href="giris.html" class="nav-link active  text-white">
+                              Giriş
+                              </a></li>
+                    </ul>
+                </div>
+    
+            </div>
+        </nav>
+    
+    <!------------------------------------------------------------------------------------------------------------------------------------------------->
+      <br><br><br><br><br><br><br>
+     
+        <div class="container py-5">
+            <form name="loginform" class="loginform" action="giriş.php" Method="POST" onsubmit="return  gecerliMi()">
+                <div class="form-group">
+                    <label for="form_email" style="color:white;">Email </label>
+                    <input id="form_email" type="text" name="mail" class="form-control" placeholder="Mail adresinizi giriniz ">
+                    <small id="emailHelp" class="form-text text-muted" style="color:white;">Mailinizi doğru girdiğinizden emin olunuz.</small>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1" style="color:white;">Şifre</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" name="sifre" placeholder="Şifrenizi giriniz">
+                </div>
+                <button type="submit" class="btn btn-primary" style="color:white;">Giriş Yap</button>
+            </form>
+        </div> 
+    
+    <br><br><br><br><br><br><br>
+    <!-------------------------------------------------------------------------------------------------------------------------------->
+   
+    </body>
+    
+    <script>
+        function gecerliMi() {
+            var mail = document.loginform.mail.value;
+            var sifre = document.loginform.sifre.value;
+            var atpos = mail.indexOf("@");
+            var dotpos = mail.lastIndexOf(".");
+    
+            if (mail == null || mail == "", sifre == null || sifre == "") {
+                alert("Tüm alanları doldurduğunuzdan emin olunuz!");
+                return false;
+            } else if (atpos < 1 || dotpos < atpos + 2 || dotpos + 2 >= mail.length) {
+                alert("Lütfen mail adresine bir @ işareti ekleyin.");
+                return false;
+            }
+            return true;
+        }
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+    
+    </html>
