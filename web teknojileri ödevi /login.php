@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 
@@ -44,10 +43,7 @@
 	      				Anasayfa
 	      				</a></li>
 
-					<li class="nav-item">
-						<a href="benimhakkimda.html" class="nav-link active  text-white">
-	      				Benim Hakkımda
-	      				</a></li>
+					
 
 					<li class="nav-item">
 						<a href="ozgecmis.html" class="nav-link active  text-white">
